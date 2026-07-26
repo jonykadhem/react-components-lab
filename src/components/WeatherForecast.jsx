@@ -1,10 +1,10 @@
-const WeatherForecast = ({ day, img, imgAlt, conditions, time }) => {
+const WeatherForecast = (props) => {
   return (
     <div className="weather">
-      <h2>{day}</h2>
-      <img src={img} alt={imgAlt} />
-      <p><span>Conditions: </span>{conditions}</p>
-      <p><span>Time: </span>{time}</p>
+      <h2>{props.day}</h2>
+      <img src={props.img} alt={props.imgAlt} />
+      <p><span>Conditions: </span>{props.conditions}</p>
+      <p><span>Time: </span>{props.time}</p>
     </div>
   );
 };
